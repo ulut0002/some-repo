@@ -1,0 +1,54 @@
+{
+  "dashboard": {
+    "title": "Dashboard",
+    "addWidget": "Add Widget",
+    "resetLayout": "Reset to default layout",
+    "removeWidget": "Remove Widget",
+    "confirmRemove": "Are you sure you want to remove this widget?",
+    "viewMode": {
+      "ariaLabel": "View mode",
+      "auto": "Auto (responsive)",
+      "card": "Card view",
+      "table": "Table view"
+    },
+    "widgetTypes": {
+      "spinner": "Spinner",
+      "table": "Table",
+      "barchart": "Bar Chart",
+      "stats": "Stats",
+      "clock": "Clock"
+    }
+  },
+  "widgets": {
+    "spinner": {
+      "loading": "Loading",
+      "ariaLabel": "Loading spinner"
+    },
+    "table": {
+      "ariaLabel": "Sample data table",
+      "ariaLabelList": "Sample data",
+      "columns": {
+        "name": "Name",
+        "value": "Value",
+        "status": "Status"
+      },
+      "statuses": {
+        "Active": "Active",
+        "Idle": "Idle",
+        "Offline": "Offline"
+      }
+    },
+    "barchart": {
+      "title": "Bar Chart",
+      "item": "Item {{number}}"
+    },
+    "stats": {
+      "metrics": {
+        "revenue": "Revenue",
+        "users": "Users",
+        "orders": "Orders",
+        "conversion": "Conversion"
+      }
+    }
+  }
+}

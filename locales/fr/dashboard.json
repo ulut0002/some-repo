@@ -1,0 +1,54 @@
+{
+  "dashboard": {
+    "title": "Tableau de bord",
+    "addWidget": "Ajouter un widget",
+    "resetLayout": "Réinitialiser la disposition",
+    "removeWidget": "Supprimer le widget",
+    "confirmRemove": "Êtes-vous sûr de vouloir supprimer ce widget ?",
+    "viewMode": {
+      "ariaLabel": "Mode d'affichage",
+      "auto": "Auto (adaptatif)",
+      "card": "Vue cartes",
+      "table": "Vue tableau"
+    },
+    "widgetTypes": {
+      "spinner": "Spinner",
+      "table": "Tableau",
+      "barchart": "Graphique en barres",
+      "stats": "Statistiques",
+      "clock": "Horloge"
+    }
+  },
+  "widgets": {
+    "spinner": {
+      "loading": "Chargement",
+      "ariaLabel": "Indicateur de chargement"
+    },
+    "table": {
+      "ariaLabel": "Tableau de données",
+      "ariaLabelList": "Données",
+      "columns": {
+        "name": "Nom",
+        "value": "Valeur",
+        "status": "Statut"
+      },
+      "statuses": {
+        "Active": "Actif",
+        "Idle": "Inactif",
+        "Offline": "Hors ligne"
+      }
+    },
+    "barchart": {
+      "title": "Graphique en barres",
+      "item": "Élément {{number}}"
+    },
+    "stats": {
+      "metrics": {
+        "revenue": "Revenus",
+        "users": "Utilisateurs",
+        "orders": "Commandes",
+        "conversion": "Conversion"
+      }
+    }
+  }
+}

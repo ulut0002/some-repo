@@ -1,0 +1,54 @@
+{
+  "dashboard": {
+    "title": "Panel de control",
+    "addWidget": "Agregar widget",
+    "resetLayout": "Restablecer diseño predeterminado",
+    "removeWidget": "Eliminar widget",
+    "confirmRemove": "¿Estás seguro de que deseas eliminar este widget?",
+    "viewMode": {
+      "ariaLabel": "Modo de vista",
+      "auto": "Auto (adaptable)",
+      "card": "Vista de tarjetas",
+      "table": "Vista de tabla"
+    },
+    "widgetTypes": {
+      "spinner": "Spinner",
+      "table": "Tabla",
+      "barchart": "Gráfico de barras",
+      "stats": "Estadísticas",
+      "clock": "Reloj"
+    }
+  },
+  "widgets": {
+    "spinner": {
+      "loading": "Cargando",
+      "ariaLabel": "Indicador de carga"
+    },
+    "table": {
+      "ariaLabel": "Tabla de datos",
+      "ariaLabelList": "Datos",
+      "columns": {
+        "name": "Nombre",
+        "value": "Valor",
+        "status": "Estado"
+      },
+      "statuses": {
+        "Active": "Activo",
+        "Idle": "Inactivo",
+        "Offline": "Desconectado"
+      }
+    },
+    "barchart": {
+      "title": "Gráfico de barras",
+      "item": "Elemento {{number}}"
+    },
+    "stats": {
+      "metrics": {
+        "revenue": "Ingresos",
+        "users": "Usuarios",
+        "orders": "Pedidos",
+        "conversion": "Conversión"
+      }
+    }
+  }
+}
