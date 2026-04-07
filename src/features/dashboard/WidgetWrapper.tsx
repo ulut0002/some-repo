@@ -28,8 +28,8 @@ export default function WidgetWrapper({
   return (
     <div className="@container flex h-full flex-col overflow-hidden border border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800">
       {/* Header */}
-      <div className="drag-handle flex cursor-grab items-center justify-between border-b border-gray-100 px-3 py-2 active:cursor-grabbing dark:border-gray-700">
-        <span className="truncate text-sm font-medium text-gray-600 dark:text-gray-300">{title}</span>
+      <div className="flex items-center justify-between border-b border-gray-100 px-3 py-2 dark:border-gray-700">
+        <span className="drag-handle min-w-0 flex-1 cursor-grab truncate text-sm font-medium text-gray-600 active:cursor-grabbing dark:text-gray-300">{title}</span>
         <div className="flex shrink-0 items-center gap-1 pl-2">
           {/* View mode toggle — only for widgets that support it */}
           {supportsViewMode && (
