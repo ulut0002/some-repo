@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect, useRef } from 'react'
+import { useState, useCallback, useEffect, useRef, useDeferredValue } from 'react'
 import { GridLayout, useContainerWidth } from 'react-grid-layout'
 import type { Layout, LayoutItem } from 'react-grid-layout'
 import {
@@ -64,7 +64,8 @@ interface Props {
 
 export default function DashboardGrid({ pendingAdd, onPendingAddConsumed }: Props) {
   const { t } = useTranslation(['dashboard', 'common'])
-  const { width, containerRef } = useContainerWidth()
+  const { width: rawWidth, containerRef } = useContainerWidth()
+  const width = useDeferredValue(rawWidth)
 
   const [widgetTypes, setWidgetTypes] = useState<Record<string, WidgetType>>(loadWidgetTypes)
   const [layouts, setLayouts] = useState<Layouts>(loadLayouts)

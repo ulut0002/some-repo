@@ -37,7 +37,7 @@ export const seedLayouts: Record<AppBreakpoint, LayoutItem[]> = {
   ],
   // 4 columns — mobile
   sm: [
-    { i: 'w1', x: 0, y: 0,  w: 2, h: 3, minW: 1, minH: 2 },
+    { i: 'w1', x: 0, y: 0,  w: 2, h: 4, minW: 1, minH: 2 },
     { i: 'w2', x: 2, y: 0,  w: 2, h: 4, minW: 1, minH: 3 },
     { i: 'w3', x: 0, y: 4,  w: 4, h: 4, minW: 2, minH: 3 },
     { i: 'w4', x: 0, y: 8,  w: 2, h: 3, minW: 1, minH: 2 },
