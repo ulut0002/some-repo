@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "WebFetch(domain:www.npmjs.com)",
+      "WebFetch(domain:github.com)",
+      "WebSearch",
+      "WebFetch(domain:npmdoc.github.io)",
+      "WebFetch(domain:codesandbox.io)",
+      "Bash(node:*)"
+    ]
+  }
+}
