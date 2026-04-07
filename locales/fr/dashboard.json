@@ -2,6 +2,7 @@
   "dashboard": {
     "title": "Tableau de bord",
     "addWidget": "Ajouter un widget",
+    "animate": "Animer",
     "resetLayout": "Réinitialiser la disposition",
     "removeWidget": "Supprimer le widget",
     "confirmRemove": "Êtes-vous sûr de vouloir supprimer ce widget ?",
