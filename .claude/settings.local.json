@@ -8,7 +8,10 @@
       "WebSearch",
       "WebFetch(domain:npmdoc.github.io)",
       "WebFetch(domain:codesandbox.io)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)",
+      "Bash(git push:*)"
     ]
   }
 }
