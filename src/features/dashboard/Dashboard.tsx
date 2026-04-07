@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react'
-import { Button, IconButton, Tooltip } from '@mui/material'
+import { Button, IconButton, Switch, Tooltip, FormControlLabel } from '@mui/material'
 import { Plus, RotateCcw } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import DashboardGrid from './DashboardGrid'
@@ -15,6 +15,7 @@ export default function Dashboard() {
   const [addOpen, setAddOpen] = useState(false)
   const [pendingAdd, setPendingAdd] = useState<{ type: WidgetType } | null>(null)
   const [resetKey, setResetKey] = useState(0)
+  const [animationsEnabled, setAnimationsEnabled] = useState(true)
 
   const handleReset = useCallback(() => {
     STORAGE_KEYS.forEach((k) => localStorage.removeItem(k))
@@ -26,6 +27,18 @@ export default function Dashboard() {
       <header className="sticky top-0 z-10 flex items-center justify-between border-b border-gray-200 bg-white px-6 py-3 shadow-sm dark:border-gray-700 dark:bg-gray-800">
         <h1 className="text-lg font-semibold text-gray-800 dark:text-gray-100">{t('dashboard.title')}</h1>
         <div className="flex items-center gap-2">
+          <FormControlLabel
+            control={
+              <Switch
+                checked={animationsEnabled}
+                onChange={(e) => setAnimationsEnabled(e.target.checked)}
+                size="small"
+              />
+            }
+            label={<span className="text-xs text-gray-600 dark:text-gray-300">{t('dashboard.animate')}</span>}
+            labelPlacement="start"
+            sx={{ marginLeft: 0, marginRight: 0, gap: '4px' }}
+          />
           <Tooltip title={t('dashboard.resetLayout')} arrow>
             <IconButton
               size="small"
@@ -56,6 +69,7 @@ export default function Dashboard() {
           key={resetKey}
           pendingAdd={pendingAdd}
           onPendingAddConsumed={useCallback(() => setPendingAdd(null), [])}
+          animationsEnabled={animationsEnabled}
         />
       </main>
 

@@ -31,3 +31,7 @@ body {
 .dark .react-resizable-handle {
   filter: invert(1);
 }
+
+.no-animation .react-grid-item {
+  transition: none !important;
+}

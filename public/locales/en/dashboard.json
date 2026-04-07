@@ -2,6 +2,7 @@
   "dashboard": {
     "title": "Dashboard",
     "addWidget": "Add Widget",
+    "animate": "Animate",
     "resetLayout": "Reset to default layout",
     "removeWidget": "Remove Widget",
     "confirmRemove": "Are you sure you want to remove this widget?",

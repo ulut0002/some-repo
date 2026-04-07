@@ -60,9 +60,10 @@ function saveWidgetPrefs(prefs: Record<string, ViewMode>) {
 interface Props {
   pendingAdd: { type: WidgetType } | null
   onPendingAddConsumed: () => void
+  animationsEnabled: boolean
 }
 
-export default function DashboardGrid({ pendingAdd, onPendingAddConsumed }: Props) {
+export default function DashboardGrid({ pendingAdd, onPendingAddConsumed, animationsEnabled }: Props) {
   const { t } = useTranslation(['dashboard', 'common'])
   const { width: rawWidth, containerRef } = useContainerWidth()
   const width = useDeferredValue(rawWidth)
@@ -159,7 +160,7 @@ export default function DashboardGrid({ pendingAdd, onPendingAddConsumed }: Prop
 
   return (
     <>
-      <div ref={containerRef as React.RefObject<HTMLDivElement>}>
+      <div ref={containerRef as React.RefObject<HTMLDivElement>} className={animationsEnabled ? undefined : 'no-animation'}>
         {width > 0 && (
           <GridLayout
             layout={layout}

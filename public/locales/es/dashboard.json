@@ -2,6 +2,7 @@
   "dashboard": {
     "title": "Panel de control",
     "addWidget": "Agregar widget",
+    "animate": "Animar",
     "resetLayout": "Restablecer diseño predeterminado",
     "removeWidget": "Eliminar widget",
     "confirmRemove": "¿Estás seguro de que deseas eliminar este widget?",
